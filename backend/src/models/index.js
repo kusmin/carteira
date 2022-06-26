@@ -1,21 +1,23 @@
 class model {
-	constructor() {
-		
-	}
-	
-	create() {
-		
-	}
-	read() {
-		
-	}
-	update() {
-		
-	}
-	delete() {
-		
-	}
-	
+  constructor () {
+
+  }
+
+  create () {
+
+  }
+
+  read () {
+
+  }
+
+  update () {
+
+  }
+
+  delete () {
+
+  }
 }
 
-module.exports = model;
+module.exports = model

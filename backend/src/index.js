@@ -1,18 +1,18 @@
-const express = require('express');
-const cors = require('cors');
-const morgan = require('morgan');
-const bodyParser = require('body-parser');
+import { json } from 'body-parser'
+import cors from 'cors'
+import express from 'express'
+import morgan from 'morgan'
 
-const routes = require('./routes');
+import routes from './routes'
 
-const app = express();
+const app = express()
 
-app.use(cors());
-app.use(morgan(':method :url :status :user-agent - :response-time ms'));
-app.use(bodyParser.json());
+app.use(cors())
+app.use(morgan(':method :url :status :user-agent - :response-time ms'))
+app.use(json())
 
-app.use('/', routes);
+app.use('/', routes)
 
-app.listen(process.env.PORT || 3000, function() {
-	console.log('Express app running on port ' + (process.env.PORT || 3000))
-});
+app.listen(process.env.PORT || 3000, function () {
+  console.log('Express app running on port ' + (process.env.PORT || 3000))
+})

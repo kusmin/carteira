@@ -1,9 +1,9 @@
-const express = require('express');
+const express = require('express')
 
-const model = require('../models');
+const model = require('../models')
 
-const router = express.Router();
+const router = express.Router()
 
-router.get('/', controllers.get);
+router.get('/', controllers.get)
 
-module.exports = router;
+module.exports = router
