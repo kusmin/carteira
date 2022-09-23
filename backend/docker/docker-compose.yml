@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  db-carteira:
+    build: ./bd
+    ports:
+      - '5498:5432'
